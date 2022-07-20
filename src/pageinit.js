@@ -2,21 +2,24 @@
 
 const pageLoad = (() => {
     const getContent = document.getElementById('content');
-    // const test = document.createElement('div');
-    // test.classList.add('hellotest');
-    // test.innerHTML = "Hello, World!";
-    // getContent.appendChild(test);
-
-    // const getDiv = document.querySelector('.hellotest');
-    // const newChild = document.createElement('div');
-    // newChild.innerHTML = ("I'm a new div!!");
-    // getDiv.appendChild(newChild);
     const cHeader = document.createElement('div');
     cHeader.classList.add('content-header');
-    cHeader.innerHTML = "Hello World";
     getContent.appendChild(cHeader);
 
-    
+    //function for appending elements
+    const makeElement = (parent, item, cli, html) => {
+        const e = document.createElement(`${item}`);
+        e.classList.add(`${cli}`);
+        e.innerHTML = html;
+        parent.appendChild(e);
+    };
+
+    makeElement(cHeader, 'div', 'navbar', null);
+    const getNavbar = document.querySelector('.navbar');
+    const headArray = ["Home", "Menu", "Contact"];
+    for (let i=0; i < headArray.length; i++) {
+        makeElement(getNavbar, 'div', 'navbar-link', headArray[i]);
+    };
 
 }
 )();

@@ -1,4 +1,6 @@
 @import "./scss/meyer"; 
+@import "./scss/variables";
+@import "./scss/header";
 
 /* Anything after this will over-write above styles */
 
@@ -6,9 +8,6 @@
 $body-color: red;
 
 body {
-  color: $body-color;
+
 }
 
-.content-header {
-    background-color: black;
-}
