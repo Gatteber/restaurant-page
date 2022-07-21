@@ -30,20 +30,25 @@ const pageLoad = (() => {
     const getNavElement = document.querySelectorAll('.navbar-link');
     getNavElement.forEach(element => {
         element.setAttribute("id", `${element.innerHTML}`)
-        element.addEventListener('click', () => {
-            console.log("It worked!");
-        })
     })
 
-    //body
-    makeElement(getContent, 'div', 'content-body', null);
-    const getBody = document.querySelector('.content-body');
-    makeElement(getBody, 'div', 'content-card', null);
-    const getCard = document.querySelector('.content-card');
-    makeElement(getCard, 'div', 'card-main', "lorem");
 
+
+    return { makeElement, getContent, }
 
 } 
 )();
 
-export { pageLoad };
+
+const renderBody = () => {
+    pageLoad.makeElement(pageLoad.getContent, 'div', 'content-body', null);
+    const getBody = document.querySelector('.content-body');
+    pageLoad.makeElement(getBody, 'div', 'content-card', null);
+    const getCard = document.querySelector('.content-card');
+    pageLoad.makeElement(getCard, 'div', 'card-main', "lorem");
+
+}
+
+
+
+export { pageLoad, renderBody, };
