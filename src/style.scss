@@ -1,6 +1,7 @@
 @import "./scss/meyer"; 
 @import "./scss/variables";
 @import "./scss/header";
+@import "./scss/body";
 
 /* Anything after this will over-write above styles */
 
@@ -11,3 +12,6 @@ body {
 
 }
 
+#content {
+    height: 100vh;
+}
