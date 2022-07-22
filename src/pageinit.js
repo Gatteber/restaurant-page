@@ -52,8 +52,9 @@ const renderBody = () => {
     const getBody = document.querySelector('.content-body');
     pageLoad.makeElement(getBody, 'div', 'content-card', null);
     const getCard = document.querySelector('.content-card');
-    pageLoad.makeElement(getCard, 'div', 'card-main', "lorem");
-
+    pageLoad.makeElement(getCard, 'div', 'card-main', null);
+    const getMain = document.querySelector('.card-main');
+    getMain.innerHTML = "A picture. That's where it all started for us. Here at Bellisimo, we want you to have a great experience, whether it's at our restaurant or in your life. We are dedicated to making it perfect."
 }
 
 
