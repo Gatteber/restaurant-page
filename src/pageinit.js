@@ -6,10 +6,17 @@ const pageLoad = (() => {
     const cHeader = document.createElement('div');
     cHeader.classList.add('content-header');
     getContent.appendChild(cHeader);
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('header-img-container');
+    cHeader.appendChild(imgContainer);
     const headImg = new Image();
     headImg.classList.add('header-img');
     headImg.src = HeadImage;
-    cHeader.appendChild(headImg);
+    imgContainer.appendChild(headImg);
+    const headTxt = document.createElement('div');
+    headTxt.classList.add('header-text');
+    headTxt.innerHTML = "Bellisimo";
+    imgContainer.appendChild(headTxt);
 
     //function for appending elements
     const makeElement = (parent, item, cli, html) => {
