@@ -5,6 +5,7 @@
     font-weight: 600;
     font-style: normal;
   }
+
 .content-header {
     background-color: $black;
     overflow: hidden;
@@ -27,7 +28,7 @@
 }
 
 .header-text {
-    font-family: 'CC';
+    font-family: 'CC', arial;
     font-size: 60px;
     position: absolute;
     color: black;

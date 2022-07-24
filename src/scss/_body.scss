@@ -1,12 +1,18 @@
 @import './variables';
+@font-face {
+    font-family: 'Ibarra';
+    src: url('/src/IbarraRealNova-VariableFont_wght.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 
 .content-body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $black;
 }
 
 .content-card {
-    height: 80vh;
+    min-height: 80vh;
     margin-left: 10rem;
     margin-right: 10rem;
     background-color: $white;
@@ -17,9 +23,21 @@
 .card-main {
     margin: 1rem;
     padding: 10px;
+    font-size: 3rem;
+    color: $white;
+    background-color: black;
+    opacity: 70%;
+    font-family: 'Ibarra', arial;
+
+}
+
+.card-about, .card-about-you-inner, .card-about-owner-inner {
+    margin: 1rem;
+    padding: 10px;
     font-size: 1.25rem;
     color: $white;
     background-color: black;
     opacity: 70%;
     // border: 1px solid $black;
+    font-family: 'Ibarra', arial;
 }

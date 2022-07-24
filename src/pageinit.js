@@ -54,7 +54,19 @@ const renderBody = () => {
     const getCard = document.querySelector('.content-card');
     pageLoad.makeElement(getCard, 'div', 'card-main', null);
     const getMain = document.querySelector('.card-main');
-    getMain.innerHTML = "A picture. That's where it all started for us. Here at Bellisimo, we want you to have a great experience, whether it's at our restaurant or in your life. We are dedicated to making it perfect."
+    pageLoad.makeElement(getMain, 'h1', 'card-about-header', "About Us");
+    // getMain.innerHTML = "About Us"
+    pageLoad.makeElement(getMain, 'p', 'card-about', null);
+    const getAbout = document.querySelector('.card-about');
+    getAbout.innerHTML = "A picture. That's where it all started for us. Here at Bellisimo, we want you to have a great experience, whether it's at our restaurant or in your life. We are dedicated to making it perfect. Our chefs and staff spend their time dreaming of a way to make every experience nothing short of our name: Bellisimo.";
+    pageLoad.makeElement(getMain, 'h1', 'card-about-you', "About You");
+    pageLoad.makeElement(getMain, 'p', 'card-about-you-inner', null);
+    const getAboutYou = document.querySelector('.card-about-you-inner');
+    getAboutYou.innerHTML = "Reservations are not accepted at Bellisimo. We pride ourselves in being available on a first-come, first-serve basis to create the aura and mystique of old restaurants. Our owner, who studied in Japan for 10 years, believes that this method allows everyone to have an equal opportunity to experience us.";
+    pageLoad.makeElement(getMain, 'h1', 'card-about-owner', "About the Owner");
+    pageLoad.makeElement(getMain, 'p', 'card-about-owner-inner', null);
+    const getAboutOwner = document.querySelector('.card-about-owner-inner');
+    getAboutOwner.innerHTML = "Clark Kent was born in Denver, Colorado and moved to Japan in March of 2003. There, he studied under the tutelage of Masayoshi Matsuhara, one of the famous sushi chefs of the Osaka area. Following that, he created his new concept, an italian fusion restaurant combining the fantastic flavors of Europe and Japan together to make a new, unique, and pleasant experience.";
 }
 
 
