@@ -31,7 +31,12 @@
 
 }
 
-.card-about, .card-about-you-inner, .card-about-owner-inner {
+.list-small {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.card-about, .card-about-you-inner, .card-about-owner-inner, .contact-list-head {
     margin: 1rem;
     padding: 10px;
     font-size: 1.25rem;
@@ -41,3 +46,5 @@
     // border: 1px solid $black;
     font-family: 'Ibarra', arial;
 }
+
+
