@@ -10,7 +10,7 @@ import { renderContact } from "./contact";
 
 
 function component () {
-    //render "home on pageload"
+    //render "home" on pageload
     renderBody();
 
 

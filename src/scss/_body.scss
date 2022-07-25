@@ -12,7 +12,7 @@
 }
 
 .content-card {
-    min-height: 80vh;
+    // min-height: 80vh;
     margin-left: 10rem;
     margin-right: 10rem;
     background-color: $white;
@@ -36,7 +36,7 @@
     padding: 10px;
 }
 
-.card-about, .card-about-you-inner, .card-about-owner-inner, .contact-list-head {
+.card-about, .card-about-you-inner, .card-about-owner-inner, .contact-list-head, .menu-list {
     margin: 1rem;
     padding: 10px;
     font-size: 1.25rem;
